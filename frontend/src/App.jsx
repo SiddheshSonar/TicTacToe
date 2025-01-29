@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import CloseIcon from '@mui/icons-material/Close';
+import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
+import "./index.css"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className='w-full min-h-screen h-full bg-gray-800 flex items-start justify-between gap-0 relative'>
+      <div className='absolute top-8 left-[50.56%] transform -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center gap-1 text-4xl font-extrabold p-4 w-max'>
+        <CircleOutlinedIcon
+          className='text-ocol !text-4xl'
+        />
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          <span className='text-ocol'>TIC-T</span>
+          <span className='bg-gradient-to-r from-ocol to-xcol text-transparent bg-clip-text'
+          >A</span>
+          <span className='text-xcol'>C-TOE</span>
         </p>
+        <CloseIcon
+          className='text-xcol !text-4xl'
+        />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className='bg-xcol text-white text-center p-4 min-h-screen !h-full w-1/2'>
+      </div>
+      <div className='bg-ocol text-white text-center p-4 min-h-screen !h-full w-1/2'>
+      </div>
+    </div>
   )
 }
 

@@ -82,7 +82,7 @@ function App() {
           Match Draw
         </DialogTitle>
         <DialogContent>
-          <DialogContentText className='!text-gray-900 !text-lg'>
+          <DialogContentText className='!text-gray-900'>
             Nobody won, you may jump to any previous moves or reset the game!
             <p className='!font-bold !text-lg my-2'>Game History:</p>
             <div className='w-full flex flex-wrap content-center items-center justify-center gap-4'>
@@ -155,8 +155,8 @@ function App() {
           {winner == 'X' ? 'Player X Wins!' : 'Player O Wins!'}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText className='!text-gray-900 !text-lg'>
-            Wohooo! Congratulations to Player <span className='!font-bold '>{player}!</span>
+          <DialogContentText className='!text-gray-900'>
+            Wohooo! Congratulations to Player <span className='!font-bold'>{player}!</span> Better luck next time Player <span className='!font-bold'>{player == 'X' ? 'O' : 'X'}!</span>
             <p className='!font-bold !text-lg my-2'>Game History:</p>
             <div className='w-full flex flex-wrap content-center items-center justify-center gap-4'>
               {history.map((move, idx) => (

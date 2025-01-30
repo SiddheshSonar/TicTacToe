@@ -9,6 +9,9 @@ export default {
       colors: {
         "xcol": "#01d0fb",
         "ocol": "#fb2b3a"
+      },
+      screens: {
+        "max-md": { "max": "767px" }
       }
     },
   },
